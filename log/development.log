@@ -1,0 +1,2049 @@
+  [1m[36m (198.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (165.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateResults (20160630024627)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "results" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user" varchar, "similarity" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160630024627"]]
+  [1m[35m (146.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'main'` to `controller: 'main'`. (called from block in <top (required)> at /home/maria/Escritorio/API Twitter/twitterapp/config/routes.rb:11)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:50:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1445ms (Views: 1431.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:50:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/application.self-44e45a26433c55a7690e8176a117cf710b89d7ce144a3be027e80f23ff5103ad.css?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:53:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/application.self-07e8d5752ac444893ee870b6d728bb99c10a1120489153e25d186b4c3da03855.css?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:55:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:57:15 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/application.self-80cab7f4f5c046ee9373fb7216f6f4890efdf4696f30f45c8faf863f73efddf0.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:16 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:57:34 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/application.self-54612584e03d07c60003595b835576ba21bb0af294e03fe94ab7b1a8684dce48.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:57:58 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:58 -0400
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:58 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/assets/application.self-daba27f0e41399aad88238d3d97764c454028495bcf6e96f0e1be67a5cca29eb.css?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:57:59 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/application.self-daba27f0e41399aad88238d3d97764c454028495bcf6e96f0e1be67a5cca29eb.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/application.self-7b0a9c08de92b2e80390892f3b9b3a46f740b53f5a72227f876db9139980066c.css?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:58:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 22:59:55 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:59:55 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 22:59:55 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 22:59:55 -0400
+
+
+Started GET "/assets/application.self-1e6883a5a8920bc502d75e86750070f017cb1749551aac6808a81ce75439ceda.css?body=1" for 127.0.0.1 at 2016-06-29 22:59:55 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 22:59:55 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:59:55 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 22:59:56 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 22:59:56 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 22:59:56 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 22:59:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/application.self-20dd4eed86aa4d7c1f0cc0f8614f063be26179e63f0fd416364b862eccaaccde.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:10 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/application.self-60a4889378b481e21727c0852ccde0bba581811d3876a483b32732adedeee1f3.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/application.self-60a4889378b481e21727c0852ccde0bba581811d3876a483b32732adedeee1f3.css?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:01:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/application.self-09476f1a8af66f4b925de542851a659fcd0da30bca84904b16178b7b787a0416.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/application.self-129e5afce31eec55982bf476366bb71093f5d73a40e46d01f241362b460774e8.css?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:53 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:02:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/application.self-72aa1dc7cd80d7ee7c3b162ad64398b516aabdb53348f6cb9e1b8cb7d12cf846.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:09 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/application.self-09476f1a8af66f4b925de542851a659fcd0da30bca84904b16178b7b787a0416.css?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:03:16 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:04:19 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/application.self-701b32b0ec6fccdf9feb22868b4abe7beb007f92211efa614bdbaef489ac8a02.css?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:04:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:06:08 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/application.self-607048187bfe67fead5546709b126a909b3bd0b8ad17390a19087b0b6fd93934.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:09 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/application.self-09476f1a8af66f4b925de542851a659fcd0da30bca84904b16178b7b787a0416.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:06:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/application.self-c745515c4d21c1de355e3427d238e4d15ab0737c90972eb3804a0cf8e62236df.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:12 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/application.self-c1064b2cea7fbd33f22a9e4ffad0fbcf73edbfd51f42c4c70f5c61bc14247b17.css?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:08:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/application.self-64c037c147ee08c5340f834dde96855325a8db19358daa47cddf68275d4c83fa.css?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:09:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:13:09 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 510ms (Views: 504.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:13:18 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 134ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:13:20 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 122ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:16:01 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a6d7d53adcc1e306ad326df89df36b2a82182e52a63efefcc7d4f6ed5d8f950b.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:16:38 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 144ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/application.self-ae7255b6cb6f24f5ffb056b74326eb8ff88a1b7ae3fbdf77fe1d106cac780d7e.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:39 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/application.self-f44e38cdc36ffb2a1d7e7e27ee6236524eab78e668f142d124268567752067d6.css?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:16:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:17:03 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/application.self-f44e38cdc36ffb2a1d7e7e27ee6236524eab78e668f142d124268567752067d6.css?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:17:04 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:18:19 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:22:55 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:55 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:55 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:55 -0400
+
+
+Started GET "/assets/application.self-a7b0812a355febd009453f8336f70a75f3a8f19165034d7240ed7dbbf424aaa2.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:56 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:56 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:56 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:56 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:56 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:56 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:56 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/application.self-a7b0812a355febd009453f8336f70a75f3a8f19165034d7240ed7dbbf424aaa2.css?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:22:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/application.self-9b64a267b191fe481714b703079bc6f776f511aeaafdfba7a758eff7f6622cbf.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/application.self-9b64a267b191fe481714b703079bc6f776f511aeaafdfba7a758eff7f6622cbf.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:23:42 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:24:27 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/application.self-bb1d105900581c7faaeaba1b68210fbc67988bb5a77e447581a4e75a07d427b4.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:28 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:24:43 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 124ms (Views: 121.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:24:43 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 141ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/application.self-bb1d105900581c7faaeaba1b68210fbc67988bb5a77e447581a4e75a07d427b4.css?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:24:44 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:25:17 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 142ms (Views: 139.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/application.self-bb1d105900581c7faaeaba1b68210fbc67988bb5a77e447581a4e75a07d427b4.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:18 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 116ms (Views: 113.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/application.self-34552962c6ac6f36dc27cca7a821a0c5fffcb0a685d34167f559431fa7f9d8b4.css?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:25:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:26:27 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:26:27 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:26:27 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:26:27 -0400
+
+
+Started GET "/assets/application.self-5958bedee1a1e201bade43f65d47a5f7df2f195a563492e2fa59e05a1c7879aa.css?body=1" for 127.0.0.1 at 2016-06-29 23:26:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:26:27 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:26:27 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:26:28 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:26:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:26:28 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:26:28 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:36:42 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 162ms (Views: 161.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/Chart.js" for 127.0.0.1 at 2016-06-29 23:36:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/Chart.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.8ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.1ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (68.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/application.self-5958bedee1a1e201bade43f65d47a5f7df2f195a563492e2fa59e05a1c7879aa.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+
+Started GET "/Chart.js" for 127.0.0.1 at 2016-06-29 23:37:28 -0400
+
+ActionController::RoutingError (No route matches [GET] "/Chart.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/application.self-5958bedee1a1e201bade43f65d47a5f7df2f195a563492e2fa59e05a1c7879aa.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+
+Started GET "/Chart.js" for 127.0.0.1 at 2016-06-29 23:37:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/Chart.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.2ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/application.self-5958bedee1a1e201bade43f65d47a5f7df2f195a563492e2fa59e05a1c7879aa.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/Chart.js" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/Chart.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.8ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.9ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+
+Started GET "/Chart.js" for 127.0.0.1 at 2016-06-29 23:38:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/Chart.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.2ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:38:37 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1074ms (Views: 1072.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/results.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:38 -0400
+
+
+Started GET "/assets/similarity.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:38 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:38 -0400
+
+
+Started GET "/assets/scaffolds.self-97c0fc27ac838871220becad7d31d45a3c9b10041efd91e45a4612460dfc22e0.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:38 -0400
+
+
+Started GET "/assets/application.self-5958bedee1a1e201bade43f65d47a5f7df2f195a563492e2fa59e05a1c7879aa.css?body=1" for 127.0.0.1 at 2016-06-29 23:38:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/dist/Chart.bundle.self-5972bc11d30c678edaa9fd44101fc468086782fd2c116a5f5dbf72ccda194680.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/dist/Chart.bundle.min.self-59dc8dded501edba58726ff15392cbe9da9515bc31d5f733d7d2be84bee50b05.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/dist/Chart.self-8f1e7b5f1ac271bcf36a39475c9cacc317c1dad4a416a135b374198439293140.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/dist/Chart.min.self-c4ae1f0972cca0da4b40fab984299dbc9e89a5a0ef144c6a19981a8a4dab06ff.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/gulpfile.self-d5d2ad0b39c11c1a3af2bcc684e6a15a297957b4493092d662658a0211836ca5.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/karma.conf.ci.self-471f40e120d38d1e0076007be1922ecaca234d14f38a3728f7ca6dc6daa28cf1.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/karma.conf.self-1d68e5952dbd7cbcd354e0e5c87bd95f9ff9aa8c6bd0c1748db348b73af445a4.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/karma.coverage.conf.self-9286f141191656a8531dbec93c217d7efb9f78856ca35acdc85d2f9bf131982d.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/chart.self-1218f2a291372bb269338ea92a6e77e955c6361b1268f87b716eef2c7e0e0107.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/charts/Chart.Bar.self-4cc73f9bec67434a4e6339e19bd01b787849f179eab5f8685bbbb62ea8b29c63.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/charts/Chart.Bubble.self-c5756d83e9a76de1b8576209c4c771e46ecca9c2f7b5cec5055891183d0a7208.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/charts/Chart.Doughnut.self-d41ad2c38471e4e24425bedd5de6323a6bfd3083049cda4c986a316227017f0a.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/charts/Chart.PolarArea.self-ff879ca4aa9ab3e08e48cb862cc4342665c06d818f80d199e25f1489c82052d7.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/charts/Chart.Line.self-adcbfdedd14d6f68c69c7e8da47693cd5023c5142eb98dbf7461f28e7e37a03f.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/charts/Chart.Radar.self-3b379e671bb877f7e5d9e0334b4d142d0e51fd4bdf6fdffc72aa62c6f6754665.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/charts/Chart.Scatter.self-7b7a691f0dc07a45dd96c3e57219bb7ea11397b44f52bf37b9e4b1291c6d5fb3.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/controllers/controller.bar.self-1ea5aab0eb94f8eb5cc4b9c641aaabbee129e5964642bd339e89a0353df67635.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/controllers/controller.bubble.self-f9206a4a2bd495f3351d6257cf8f1de7db2f80aff443d37d27e15138724ccbb0.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/controllers/controller.doughnut.self-5d967ac63d2d3b056e14274ab38cff2680a1de3b2dbc475145c7dd1a0f161c2f.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/controllers/controller.line.self-84424e4fe287d5ccb6a9924eff801c433d44f6a11bbaf200fc0c80f0f3e5574b.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/controllers/controller.polarArea.self-5cd18be74af7ef5c0f3e4d4ebf288b3e79dd75d6d6e8dfa22370fcd963dadd63.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/controllers/controller.radar.self-8eb500dd565513224026e21ef06ed7a35780e37f196ea114d3c51d0417ef03fc.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.animation.self-d82b771a2c4ce684ec81cbb38617a2a5297c97cdb2bbd351701850fc5dbb9b46.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.controller.self-089e55b9eda10c413cb5d3e4a039a9f37a63b5d949a494a248ff88cdec97e9c9.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.element.self-8b693f065ff5e5ca2afe2f875f528c7f13727897f3ff2a8c63a6679991e8ef34.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.self-0b868afdc721fd21dbfb77938ee32de124df0256027ceda53b91dc1c2e6fa182.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.helpers.self-559c1119db91685d71a4649074eb44235223962c632f2acaf3ceebf876c03526.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.datasetController.self-22fe7d91a4e06f7882e2e631afedaea44834e7e93cb46cd8faf439f9584c8d43.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.layoutService.self-52ba23bea2689526f238391f945cbbd4007e81bd1ac89a70cd85202c7b9c063f.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.legend.self-96262dfbc499f56861e03cd5dcf167daeac95e634370fac9774b1b81c430aa58.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.scaleService.self-08f1ed44787b1b3eaaebe699c6ca0e2ae8760c5c241f0967804cf8d88b6418d9.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.scale.self-a3ae0b395164445c66d81bcb722167689271a0db8dda8e171324fd7139b146c5.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.plugin.self-60af7555291ad792678b1cddccfa1da1d1738cf3812163d58800288000f13234.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.title.self-38f5d9f4bfdc27ecf9da93cd731a2921ea0ee04db8d6d8fbdac017589a4b6dcd.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/core/core.tooltip.self-f1adb4316556e70e39dc46a4fbc18d80b5876cc8eea1cf5532169d5e78d29641.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/elements/element.rectangle.self-dcee4dd6c8ddd1afb16df96087dbb61b30cc15c9d2c12874c58962cd03251c37.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/elements/element.arc.self-acdd83ac73ac74519b461589a403a1b9f003fb5d9044e11ccf1f62c5d921a095.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/elements/element.point.self-215358424774fd4421e57f13f707cb4cf085302f78a12c816fff7482a43bf187.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/scales/scale.category.self-0c26a86ad9d42dbb7c4dfe39aa5e34467d9d14ef897b5be4a77ba9a7f5d96ba7.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/elements/element.line.self-a822417386656d3ee464fb38ed83d59b767dcea8bb18fcf61e6a4f3db4a9f54a.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/scales/scale.linear.self-65a4e414038a8405cfbdc5cbce03155cfa6e2102d7b57747c1c3922b16759981.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/scales/scale.linearbase.self-bd7f73d02f2d9f014612627cc160a07dd987ee3bddc5ac10bbf734bb3837f5ac.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/scales/scale.logarithmic.self-2e6b066326174b2dd956ed4fde7f6a12306c8e8f5be47eda748bc9be53c5d61b.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/scales/scale.radialLinear.self-c499d7d3c36a453ae7664040e312c388bdab3c14b88b90e259d55348a33ca181.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/src/scales/scale.time.self-e89c50ae3ad35394161711f36bbe2529bef313798bd79428f4c8cba112e46818.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/controller.bar.tests.self-8d469fa89572dfc9fda7e1f52121306b9a907f3c3b23e8a8d1ac800bc46b7478.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/controller.line.tests.self-deef610e9ef33974970e8934d9f5d78eacda93e99ced2a0fc9d4131359f0e854.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/controller.bubble.tests.self-21b91a748a4b4c831a76329fb0891debb94ed8c6b2494b6f495f0c0beab57d75.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/controller.doughnut.tests.self-63577b3a89d04618c017d1601743f3c6e560e1e0c81de4f320cb1d80df19a697.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/controller.radar.tests.self-df14eb91d5ce4855e8bc6a88fbd285fd9927eaf67a6bfa58857781ed98b26831.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/controller.polarArea.tests.self-a92d56ab2b8e059b2e3a4b734a11eda077e2e0038ea683a119e994c9bd43d905.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.element.tests.self-f3dc2cab636e829b9a50643647222373f0ebfe82b41592908facb0df2644ad4e.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.scaleService.tests.self-3e5328cc3b6310746163f723f10b87d5d6608ed2dc1c4bd44532120fda907a19.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.legend.tests.self-4b0adf7d006d6b9a9b0d0a92674789cd391162e5278240adfb2e4174eb6fbbac.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.helpers.tests.self-638f2e6bfe24053a85d085424237ca8887b434773c9a50a0f271df2c405e0149.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.layoutService.tests.self-cfb662d49cb7d150f79c5a6382fe2a1c776b739be0df035636dcfb6afbb14fa3.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.plugin.tests.self-bf8a50244faabd117c52a4bb72ab0cfcd857bdb6213b3a26a185dfa75dc9df28.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.title.tests.self-94478e7b50b9bf202b6054730cb90048c659c0bcd87bae87768728a5440a1126.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:39 -0400
+
+
+Started GET "/assets/Chart.js/test/core.tooltip.tests.self-1d77f74c7fac74530b55697ae9d9f4b5feaf18a1ad2ad2f98d3641302144e087.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/defaultConfig.tests.self-50f0c39f6a761ba804a597aabf46dd3a1e52eb8d454b1f47bf802542899ccfe5.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/element.arc.tests.self-37a79bd6ba1143fd3274729474df5b9c7eca8dad11ab3c33f8740cd8be6b4552.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/element.line.tests.self-e66efe268bc6363fed5c5ff29aa39367a0181e7588df70a57d58f0013e84c9e9.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/element.point.tests.self-5980ded41ba38d4d9a6a49731fb4a51586da0dc292b91c74af0cc4fca3d5606c.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/element.rectangle.tests.self-90d8019925842e26720ccc0cda55296e31e2b4f471a9a08ac45d71fd0c9bd815.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/mockContext.self-baf9554f69a2a3c215c86de7e448f8cb9b9582af7538003d136a152f5cbe48e8.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/scale.category.tests.self-49852283122fb93ff53b7ad7da90def7636731e6d47594007ea8eb2ddb6cdf9c.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/scale.linear.tests.self-1c9c23de8887b456eed66ae1289f5accedeb6cacd90df31af351979a0359bb98.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/scale.logarithmic.tests.self-fb43bde2f3a8c4b1f45a4b2edf26442655a5652cb7ad8a09805c077963e7b650.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/scale.radialLinear.tests.self-1e4f08f07c402fbb6d17a11e6968ad2eb0e2291fd95b4c9899f6759071dc6019.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/Chart.js/test/scale.time.tests.self-c1a40d69ea325bffe441689649af0d53a7a58d2bc4b050f81296ba5b8f67710b.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/results.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/similarity.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+
+Started GET "/Chart.js" for 127.0.0.1 at 2016-06-29 23:38:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/Chart.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/maria/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:43:04 -0400
+
+SyntaxError (/home/maria/Escritorio/API Twitter/twitterapp/app/controllers/similarity_controller.rb:20: syntax error, unexpected ..., expecting '}'
+options = { ... }
+               ^):
+  app/controllers/similarity_controller.rb:20: syntax error, unexpected ..., expecting '}'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (50.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:43:47 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `data' for #<#<Class:0xb4e855d0>:0xb4e7b698>):
+    4: 	<img href="twitter-512.png">
+    5: 
+    6: </div>
+    7: <%= line_chart data, options %>
+    8: 
+    9: </div>
+  app/views/similarity/index.html.erb:7:in `_app_views_similarity_index_html_erb___269575555__629942678'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.1ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:43:49 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (20.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `data' for #<#<Class:0xb4e855d0>:0xb386beac>):
+    4: 	<img href="twitter-512.png">
+    5: 
+    6: </div>
+    7: <%= line_chart data, options %>
+    8: 
+    9: </div>
+  app/views/similarity/index.html.erb:7:in `_app_views_similarity_index_html_erb___269575555__629942678'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.9ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:44:00 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `data' for #<#<Class:0xb35141a0>:0xb350a128>):
+    4: 	<img href="twitter-512.png">
+    5: 
+    6: </div>
+    7: <%= line_chart data, options %>
+    8: 
+    9: </div>
+  app/views/similarity/index.html.erb:7:in `_app_views_similarity_index_html_erb___269575555__629942678'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-06-29 23:44:16 -0400
+Processing by SimilarityController#index as HTML
+  Rendered similarity/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `line_chart' for #<#<Class:0xb35141a0>:0xb9c6264>):
+    4: 	<img href="twitter-512.png">
+    5: 
+    6: </div>
+    7: <%= line_chart @data %>
+    8: 
+    9: </div>
+  app/views/similarity/index.html.erb:7:in `_app_views_similarity_index_html_erb___269575555_97335320'
+
+
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.1ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/maria/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.1ms)

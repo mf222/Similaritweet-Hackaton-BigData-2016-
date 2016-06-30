@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @result.user %>
+</p>
+
+<p>
+  <strong>Similarity:</strong>
+  <%= @result.similarity %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>
