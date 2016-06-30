@@ -12,54 +12,123 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap.min
  */
  html {
-    height: 100%;
-}
+ 	height: 100%;
+ }
 
-h1{
-	font-family: 'Ubuntu';
-	text-align: center;
-	font-size: 72px;
-	color: white;
-}
-body{
-background-size: 100%;
-background: rgba(90,161,199,1);
-background: -moz-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(90,161,199,1)), color-stop(34%, rgba(90,161,199,1)), color-stop(100%, rgba(240,195,219,1)));
-background: -webkit-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
-background: -o-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
-background: -ms-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
-background: linear-gradient(to bottom, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa1c7', endColorstr='#f0c3db', GradientType=0 );
-}
+ body h1{
+ 	font-family: 'Ubuntu';
+ 	text-align: center;
+ 	font-size: 72px;
+ 	color: white;
+ }
+ body{
+ 	background-size: 100%;
+ 	background: rgba(90,161,199,1);
+ 	background: -moz-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
+ 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(90,161,199,1)), color-stop(34%, rgba(90,161,199,1)), color-stop(100%, rgba(240,195,219,1)));
+ 	background: -webkit-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
+ 	background: -o-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
+ 	background: -ms-linear-gradient(top, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
+ 	background: linear-gradient(to bottom, rgba(90,161,199,1) 0%, rgba(90,161,199,1) 34%, rgba(240,195,219,1) 100%);
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5aa1c7', endColorstr='#f0c3db', GradientType=0 );
+ }
 
-.float-box{
-	width: 800px;
-	height: 500px;
-	margin: 0 auto;
-	position: relative;
-	background-color: white;
--webkit-box-shadow: 6px 5px 13px 1px rgba(46,46,46,0.18);
--moz-box-shadow: 6px 5px 13px 1px rgba(46,46,46,0.18);
-box-shadow: 6px 5px 13px 1px rgba(46,46,46,0.18);
+ .float-box{
+ 	width: 800px;
+ 	height: 500px;
+ 	margin: 0 auto;
+ 	position: relative;
+ 	background-color: white;
 
-border-radius: 6px 6px 6px 6px;
--moz-border-radius: 6px 6px 6px 6px;
--webkit-border-radius: 6px 6px 6px 6px;
-border: 0px solid #000000;
+ 	-webkit-box-shadow: 6px 5px 13px 1px rgba(46,46,46,0.18);
+ 	-moz-box-shadow: 6px 5px 13px 1px rgba(46,46,46,0.18);
+ 	box-shadow: 6px 5px 13px 1px rgba(46,46,46,0.18);
 
-}
+ 	border-radius: 6px 6px 6px 6px;
+ 	-moz-border-radius: 6px 6px 6px 6px;
+ 	-webkit-border-radius: 6px 6px 6px 6px;
+ 	border: 0px solid #000000;
 
-.top{
-	background-color: #33334d;
-	height: 50px;
-	border-radius: 6px 6px 0px 0px;
--moz-border-radius: 6px 6px 0px 0px;
--webkit-border-radius: 6px 6px 0px 0px;
-border: 0px solid #000000;
-}
-.logo{
-	height: 50px;
-}
+ }
+
+ .top{
+ 	background-color: #33334d;
+ 	height: 50px;
+ 	border-radius: 6px 6px 0px 0px;
+ 	-moz-border-radius: 6px 6px 0px 0px;
+ 	-webkit-border-radius: 6px 6px 0px 0px;
+ 	border: 0px solid #000000;
+ 	position: static;
+ }
+ .body-content{
+ 	width: 550px;
+ 	height: 450px;
+ 	float: right;
+ 	overflow: auto;
+ }
+ ::-webkit-scrollbar { width: 12px; } /* Track */ ::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); -webkit-border-radius: 10px; border-radius: 10px; } /* Handle */ ::-webkit-scrollbar-thumb { -webkit-border-radius: 10px; border-radius: 10px; background: rgba(255,0,0,0.8); -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); } ::-webkit-scrollbar-thumb:window-inactive { background: rgba(255,0,0,0.4); }
+
+ .content{
+ 	width: 50%;
+ 	display: inline-block;
+ 	text-align: center;
+ 	margin-left: 50px;
+ }
+
+ .aqui{
+ 	height: 40px;
+ 	margin: 2px;
+ 	padding: 4px;
+ 	display: inline-block;
+ }
+ .aqui:hover{
+ 	opacity: 0.8;
+ }
+ .usuario-top{
+ 	display: inline-block;
+ 	font-size: 14px;
+ }
+ .usuario-top a{
+ 	text-decoration: none;
+ 	color: gray;
+ }
+
+ .top a:hover{
+ 	color:#6C6C6C;
+ 	text-decoration: none;
+ }
+
+ .lateral-bar{
+ 	width: 250px;
+ 	height: 100%;
+ 	float: left;
+ }
+
+ .nav{
+ 	display: inline-block;
+ 	margin-top: 0px;
+ }
+
+ .twitt-space{
+ 	width: 300px;
+ 	height: 250px;
+ 	margin-left: 40px;
+ }
+
+ .next-but-esp{
+ 	margin-right: 10px;
+ 	padding-bottom: 10px;
+ 	float: right;
+ }
+
+ .chat{
+ 	width: 500px;
+ 	overflow: auto;
+ }
+
+ .dlineblock{
+ 	display: inline-block;
+ }

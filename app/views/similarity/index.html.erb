@@ -1,9 +1,99 @@
-<h1>Similarity test</h1>
+<h1>Twitter Similarity βeta</h1>
 <div class="float-box">
-<div class="top">
-	<img href="twitter-512.png">
+	<div class="top">
+		<a href ="#"><img src="images/twitter-512.png"  class="aqui"></a>
+		<div class="usuario-top"><a href=#>@usuario</a></div>
+	</div>
+	<div class="lateral-bar">
+		<div class="list-group nav">
+			<button type="button" class="list-group-item" id="butt1">DateBot</button>
+			<button type="button" class="list-group-item disabled" id="butt2">Analisís en profundidad</button>
+			<button type="button" class="list-group-item" id="butt3">Busqueda por usuario</button>
+		</div>
+	</div>
 
-</div>
-<%= line_chart @data %>
+	<div class="body-content">
 
-</div>
+		<div id="siman">
+
+			<div class="content">
+				<h4>Similaridad con @ifranzani</h4>
+				<%= doughnut_chart @data %>
+			</div>
+
+
+			<div class="twitt-space">
+				<blockquote class="twitter-tweet" data-lang="es"><p lang="es" dir="ltr">Al aire <a href="https://twitter.com/Ifranzani">@ifranzani</a> con su <a href="https://twitter.com/hashtag/GranCapital?src=hash">#GranCapital</a> HOY <a href="https://twitter.com/gepegepegepe">@gepegepegepe</a> nos cuenta de su show &quot;a la carta&quot; en el Caupolicán y su nuevo video ¡Sintoniza!</p>&mdash; Radio Zero (@radiozero977) <a href="https://twitter.com/radiozero977/status/748299270269239296">29 de junio de 2016</a></blockquote>
+			</div>
+
+			<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			<button type="button" class="btn btn-default btn-sm next-but-esp">Siguiente</button>
+		</div>
+
+
+		<div id="datebot">
+			<div class="chat">
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-2">
+								<a href="#" class="thumbnail">
+									<img src="..." alt="...">
+								</a>
+							</div>
+							<div class="col-md-9">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. 
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer">DateBot</div>
+
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-9">
+									Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+								</div>
+								<div class="col-xs-2">
+									<a href="#" class="thumbnail">
+										<img src="..." alt="...">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">@usuario</div>
+					</div>
+				</div>
+
+				<div class="input-group">
+					<input type="text" class="form-control dlineblock" placeholder="Escribe tu mensaje" aria-describedby="basic-addon1">
+					<button type="button" class="btn btn-default btn-sm dlineblock">Enviar</button>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div id="deepse">
+
+				<div class="content">
+					<h4>Similaridad con @mferser</h4>
+					<%= doughnut_chart @data %>
+				</div>
+
+
+				<div class="twitt-space">
+					<blockquote class="twitter-tweet" data-lang="es"><p lang="es" dir="ltr">Hola mundo</p>&mdash; María Fernanda (@mferser) <a href="https://twitter.com/mferser/status/748234681414344704">29 de junio de 2016</a></blockquote>
+					<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+
+
+
+
+		</div>
+	</div>
