@@ -1,0 +1,31 @@
+{:uriI"file://app/assets/javascripts/Chart.js/composer.json?type=application/json&id=90f570369488e4e6bd9bf1787cd36540b4898d71cec82dfc28aa2b3d82fbe91f:ET:load_pathI"app/assets/javascripts;T:filenameI"2app/assets/javascripts/Chart.js/composer.json;T:	nameI"Chart.js/composer;T:logical_pathI"Chart.js/composer.json;T:content_typeI"application/json;T:sourceI"#{
+    "name": "nnnick/chartjs",
+    "type": "library",
+    "description": "Simple HTML5 charts using the canvas element.",
+    "keywords": [
+        "chart",
+        "js"
+    ],
+    "homepage": "http://www.chartjs.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NICK DOWNIE",
+            "email": "hello@nickdownie.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "branch-alias": {
+            "release/2.0": "v2.0-dev"
+        }
+    }
+}
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"@file-digest://app/assets/javascripts/Chart.js/composer.json;TT:charsetI"
+utf-8;F:digest"%â¼Íy>&!cn,àèˆ…:ÔÅá0Ü øÛRD­ª…ıÁ:lengthi#:dependencies_digest"%S1wK#9Ó+&,›6êàDw¡óõ9A;Ú*XÑy|ºø„ß:idI"E90f570369488e4e6bd9bf1787cd36540b4898d71cec82dfc28aa2b3d82fbe91f;F:
+mtimel+Ì8uW

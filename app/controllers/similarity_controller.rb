@@ -1,21 +1,39 @@
 class SimilarityController < ApplicationController
   def index
-  	@data = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
-  datasets: [
-    {
-        label: "My First dataset",
-        backgroundColor: "rgba(220,220,220,0.2)",
-        borderColor: "rgba(220,220,220,1)",
-        data: [65, 59, 80, 81, 56, 55, 40]
-    },
-    {
-        label: "My Second dataset",
-        backgroundColor: "rgba(151,187,205,0.2)",
-        borderColor: "rgba(151,187,205,1)",
-        data: [28, 48, 40, 19, 86, 27, 90]
-    }
-  ],
+  	@data2 = {
+      labels: ["Following","Retweets","Descripción"],
+      datasets: [
+      {
+          data: [45, 62, 38],
+          labels: "@sonic_hedgehog",
+          backgroundColor: ["#cd93b44","#9fbdff","#4c9cce"],
+          borderColor: ["rgba(220,220,220,1)","rgba(220,220,220,1)","rgba(220,220,220,1)" ]
+
+      }],
+
+}
+
+@data3 = {
+labels: ["Following", "Retweets", "Descripción"],
+datasets: [
+{
+    labels: "@lolomanolo",
+    backgroundColor: ["#cd93b44","#9fbdff","#4c9cce"],
+    borderColor: ["rgba(220,220,220,1)","rgba(220,220,220,1)","rgba(220,220,220,1)" ],
+    data: [65, 96, 65]
+}],
+
+}
+
+@data4 = {
+labels: ["Following", "Retweets", "Descripción"],
+datasets: [
+{
+    labels: "@mferser",
+    backgroundColor: ["#cd93b44","#9fbdff","#4c9cce"],
+    borderColor: ["rgba(220,220,220,1)","rgba(220,220,220,1)","rgba(220,220,220,1)" ],
+    data: [45, 23, 12]
+}],
 
 }
 options = {}
